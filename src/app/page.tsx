@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: '1010mark Portfolio',
+  description: '1010markのポートフォリオです。声のデカさに自信があります。',
+}
+
 export default function Home() {
   return (
     <main>
