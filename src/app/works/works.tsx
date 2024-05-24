@@ -19,7 +19,7 @@ export let tags_table = {
 export let works: Array<Work> = [
     {
         "name": "TEST",
-        "description": "Test Testdescripton",
+        "description": "Test Testdescripton.\ntest",
         "tags": ["000", "010"],
         "images": [],
         "year": 2024

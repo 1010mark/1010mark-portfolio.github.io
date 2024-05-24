@@ -10,13 +10,13 @@ export default async function Card(props: Work) {
       <div className="px-6 py-4">
         <p className="text-right text-gray-500 text-xs float-right">{props.year}</p>
         <div className="font-bold text-xl mb-2">{props.name}</div>
-        <p className="text-gray-700 text-base">{props.description}</p>
+        <p className="text-gray-700 text-base">{props.description.split("\n").join(" ")}</p>
       </div>
       <div className="px-6 pt-4 pb-2">
-        {props.tags.map((tag) => {
+        {props.tags.map((tag, index) => {
           if(!tags_table[tag]) return false;
           return (
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tags_table[tag]}</span>
+            <span key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tags_table[tag]}</span>
           )
         })}
       </div>

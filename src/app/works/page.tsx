@@ -11,8 +11,8 @@ export default async function Home() {
   return (
     <main>
       <div className="place-content-center grid md:grid-col-3 gap-5 [grid-template-columns:repeat(1,80%)] sm:[grid-template-columns:repeat(3,30%)]">
-        {works.map(work => (
-          <Card {...work} />
+        {works.map((work, index) => (
+          <Card key={index} {...work} />
         ))}
       </div>
     </main>
