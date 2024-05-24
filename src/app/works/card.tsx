@@ -17,7 +17,7 @@ export default async function Card(props: Work) {
         {props.tags.map((tag, index) => {
           if(!tags_table[tag as keyof typeof tags_table]) return false;
           return (
-            <span key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tags_table[tag]}</span>
+            <span key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tags_table[tag as keyof typeof tags_table]}</span>
           )
         })}
       </div>
