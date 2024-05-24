@@ -3,6 +3,7 @@ import { tags_table } from "./works";;
 
 export default async function Card(props: Work) {
   return (
+    <a>
     <article className='max-w-sm rounded overflow-hidden shadow-lg'>
       {props.images[0] ? 
         <img className="w-full" src={`/image/works/${props.images[0]}`} alt={props.images[0]} /> :
@@ -14,12 +15,13 @@ export default async function Card(props: Work) {
       </div>
       <div className="px-6 pt-4 pb-2">
         {props.tags.map((tag, index) => {
-          if(!tags_table[tag]) return false;
+          if(!tags_table[tag as keyof typeof tags_table]) return false;
           return (
             <span key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tags_table[tag]}</span>
           )
         })}
       </div>
     </article>
+    </a>
   );
 }
