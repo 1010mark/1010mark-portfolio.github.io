@@ -3,10 +3,10 @@ import { tags_table } from "./works";;
 
 export default async function Card(props: Work) {
   return (
-    <a>
+    <a href={`/works/${props.directry_name}`} className="hover:opacity-60">
     <article className='max-w-sm rounded overflow-hidden shadow-lg'>
       {props.images[0] ? 
-        <img className="w-full" src={`/image/works/${props.images[0]}`} alt={props.images[0]} /> :
+        <img className="w-full" src={`/image/works/${props.directry_name}/${props.images[0]}`} alt={props.images[0]} /> :
         <div className="table [aspect-ratio:16/9] w-full h-auto text-center border"><p className="text-gray-300 table-cell align-middle">No Image</p></div>}
       <div className="px-6 py-4">
         <p className="text-right text-gray-500 text-xs float-right">{props.year}</p>

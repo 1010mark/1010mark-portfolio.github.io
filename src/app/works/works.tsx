@@ -1,4 +1,5 @@
 export type Work = {
+    directry_name: string,
     name: string,
     description: string,
     tags: Array<string>,
@@ -18,6 +19,7 @@ export let tags_table = {
 
 export let works: Array<Work> = [
     {
+        "directry_name": "test1",
         "name": "TEST",
         "description": "Test Testdescripton.\ntest",
         "tags": ["000", "010"],
@@ -25,6 +27,7 @@ export let works: Array<Work> = [
         "year": 2024
     },
     {
+        "directry_name": "test2",
         "name": "TEST",
         "description": "Test Testdescripton",
         "tags": ["000", "010"],
