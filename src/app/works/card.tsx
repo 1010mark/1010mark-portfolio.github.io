@@ -11,7 +11,11 @@ export default async function Card(props: Work) {
       <div className="px-6 py-4">
         <p className="text-right text-gray-500 text-xs float-right">{props.year}</p>
         <div className="font-bold text-xl mb-2">{props.name}</div>
-        <p className="text-gray-700 text-base">{props.description.split("\n").join(" ")}</p>
+        <p className="text-gray-700 break-all text-base">
+          {props.description.length < 80 ? 
+            props.description.split("\n").join(" ") :
+            `${props.description.split("\n").join(" ").substring(0,80)}...`}
+        </p>
       </div>
       <div className="px-6 pt-4 pb-2">
         {props.tags.map((tag, index) => {
