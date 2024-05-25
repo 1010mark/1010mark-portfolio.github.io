@@ -18,8 +18,8 @@ export default function Home() {
         
       </div>
       <div className="flex flex-wrap justify-center m-2">
-        <a href="/profile" className="w-4/12 p-6 shadow-md text-center border-blue-600 border rounded-2xl m-2 font-normal hover:font-semibold hover:bg-indigo-700 hover:text-white">About</a>
-        <a href="/works" className="w-4/12 p-6 shadow-md text-center border-blue-600 border rounded-2xl m-2 font-normal hover:font-semibold hover:bg-indigo-700 hover:text-white">Works</a>
+        <a href={`${process.env.BASE_PATH}/profile`} className="w-4/12 p-6 shadow-md text-center border-blue-600 border rounded-2xl m-2 font-normal hover:font-semibold hover:bg-indigo-700 hover:text-white">About</a>
+        <a href={`${process.env.BASE_PATH}/works`} className="w-4/12 p-6 shadow-md text-center border-blue-600 border rounded-2xl m-2 font-normal hover:font-semibold hover:bg-indigo-700 hover:text-white">Works</a>
       </div>
     </main>
   );

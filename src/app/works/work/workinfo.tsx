@@ -23,7 +23,7 @@ export default function Workinfo() {
         <div>
             <div>
                 {work.images.length ? 
-                    <img className="max-h-[60vh] md:max-w-[80%] md:float-left md:mx-2 mb-2 mx-auto" src={`/image/works/${work.directry_name}/${work.images[0]}`} />
+                    <img className="max-h-[60vh] md:max-w-[80%] md:float-left md:mx-2 mb-2 mx-auto" src={`${process.env.BASE_PATH || "https://1010mark.github.io/1010mark-portfolio.github.io" }/image/works/${work.directry_name}/${work.images[0]}`} />
                 : ""}
                 <div className="m-2">
                 {work.tags.map((tag, index) => {
