@@ -6,9 +6,7 @@ import { useSearchParams, notFound } from "next/navigation";
 import React from "react";
 
 function WorkDescription(props: {descript: string}){
-    console.log(props.descript)
     const desc = props.descript.split(/(\n)/).map((item, index) => {
-        console.log(item)
         return (<React.Fragment key={index}>
             {item.match(/\n/) ? <br /> : item}
         </React.Fragment>)
@@ -19,7 +17,7 @@ function WorkDescription(props: {descript: string}){
 export default function Workinfo() {
     const param = useSearchParams();
     const pid = param.get("pid");
-    const work = works.filter(w => w.directry_name == pid)[0];
+    const work : Work = works.filter(w => w.directry_name == pid)[0];
     if (!work) notFound();
     return (
         <div>

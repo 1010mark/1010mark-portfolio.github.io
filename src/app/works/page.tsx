@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { works } from './works'
-import Card from './card';
+import Card from './card'
 
 export const metadata: Metadata = {
   title: 'Works | 1010mark Portfolio',
