@@ -23,15 +23,7 @@ export let works: Array<Work> = [
         "name": "TEST",
         "description": "Test Testdescripton.\ntest",
         "tags": ["000", "010"],
-        "images": [],
+        "images": ["testimage.png"],
         "year": 2024
-    },
-    {
-        "directry_name": "test2",
-        "name": "TEST",
-        "description": "Test Testdescripton",
-        "tags": ["000", "010"],
-        "images": [],
-        "year":2024
     }
 ]

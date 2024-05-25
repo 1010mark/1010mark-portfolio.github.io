@@ -3,7 +3,7 @@ import { tags_table } from "./works";;
 
 export default async function Card(props: Work) {
   return (
-    <a href={`/works/${props.directry_name}`} className="hover:opacity-60">
+    <a href={`/works/work?pid=${props.directry_name}`} className="hover:opacity-60">
     <article className='max-w-sm rounded overflow-hidden shadow-lg'>
       {props.images[0] ? 
         <img className="w-full" src={`/image/works/${props.directry_name}/${props.images[0]}`} alt={props.images[0]} /> :
