@@ -19,14 +19,14 @@ export default function Workinfo({ baseurl }: { baseurl: string }) {
     const param = useSearchParams();
     const pid = param.get("pid");
     const work: Work = works.filter(w => w.directry_name == pid)[0];
-    const popupimageref = useRef(null);
-    const imagehiddener = useRef(null);
+    const popupimageref = useRef<HTMLDivElement>(null);
+    const imagehiddener = useRef<HTMLDivElement>(null);
     function popupimageopener(src : string){
-        popupimageref.current.src = src;
-        imagehiddener.current.classList.remove("hidden");
+        popupimageref.current?.src = src;
+        imagehiddener.current?.classList.remove("hidden");
     }
     function popupimagecloser(){
-        imagehiddener.current.classList.add("hidden")
+        imagehiddener.current?.classList.add("hidden")
     }
     if (!work) notFound();
     return (
