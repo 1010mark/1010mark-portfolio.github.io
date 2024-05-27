@@ -39,6 +39,13 @@ export default function Workinfo({baseurl} : {baseurl : string}) {
             <div className="m-2 clear-both">
                 <WorkDescription descript={work.description} />
             </div>
+            <div className="flex my-2 mx-auto max-w-full h-full gap-8 overflow-x-scroll snap-x">
+                {work.images.map((workimage, index) => {
+                    return (
+                        <img key={index} className="h-32 max-w-96 snap-center" src={`${baseurl}/image/works/${work.directry_name}/${workimage}`} />
+                    )
+                })}
+            </div>
         </div>
     )
 }
