@@ -19,10 +19,10 @@ export default function Workinfo({ baseurl }: { baseurl: string }) {
     const param = useSearchParams();
     const pid = param.get("pid");
     const work: Work = works.filter(w => w.directry_name == pid)[0];
-    const popupimageref = useRef<HTMLDivElement>(null);
+    const popupimageref = useRef<HTMLImageElement>(null);
     const imagehiddener = useRef<HTMLDivElement>(null);
     function popupimageopener(src : string){
-        popupimageref.current?.src = src;
+        if(popupimageref.current?.src) popupimageref.current.src = src;
         imagehiddener.current?.classList.remove("hidden");
     }
     function popupimagecloser(){
