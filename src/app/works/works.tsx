@@ -30,7 +30,7 @@ export let works: Array<Work> = [
         "name": "影シェーダー",
         "description": "Shaderlab(GLSL)で作成。\n友人が「影だけのアバター」を作ろうとしたことから端を発した作品。\nというのも、VRChat上ではアバターにライトを仕込むことが可能だが、それによる影は写真に映らない。\nよってライトによる実装が不可能であった。\nそこでカメラを仕込み、RenderTextureを取得して自作のシェーダーにより床に表示することで擬似的に影を再現した。\nカメラの角度・視野角を調整することで面光源・点光源のいずれの影も再現可能である。",
         "tags": ["001", "011"],
-        "images": ["shadow0.jpg", "shadow1.jpg", "shadow2.png"],
+        "images": ["shadow0.jpg", "shadow1.png", "shadow2.png"],
         "year": 2024
     },{
         "directry_name": "KCSTips",
