@@ -21,7 +21,7 @@ export default function Workinfo({ baseurl }: { baseurl: string }) {
     const work: Work = works.filter(w => w.directry_name == pid)[0];
     const popupimageref = useRef(null);
     const imagehiddener = useRef(null);
-    function popupimageopener(src){
+    function popupimageopener(src : string){
         popupimageref.current.src = src;
         imagehiddener.current.classList.remove("hidden");
     }
