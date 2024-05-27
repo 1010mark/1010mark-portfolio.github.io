@@ -20,7 +20,8 @@ export default async function Home() {
         子供のころ、狂ったようにプログラミングを勉強。<br />
         中学２年生の時に自由工作で自作SNSを提出するも、誰にも理解されず、<br />
         「もっと面白いものを作りたい」と思う。<br />
-        それ以降、分野を問わず面白いことを探求し続けている。</p>
+        それ以降、分野を問わず面白いことを探求し続けている。<br />
+        Paiza Sランク。Atcoder Highest 緑。</p>
         <h2 className="my-2 border-t-2 border-b-2 py-1 text-center md:w-2/4 w-3/4 mx-auto md:text-3xl text-2xl text-gray-800 drop-shadow-sm">スキル</h2>
         <table className='mx-auto leading-loose'>
           <tbody>
