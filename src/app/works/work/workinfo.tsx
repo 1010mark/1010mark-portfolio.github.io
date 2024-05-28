@@ -56,8 +56,8 @@ export default function Workinfo({ baseurl }: { baseurl: string }) {
                 })}
             </div>
             <div className="hidden fixed top-0 left-0 bg-black bg-opacity-70 w-screen h-screen" ref={imagehiddener} >
-                <div className="z-30 fixed top-0 left-0 w-screen h-screen" onClick={popupimagecloser} />
-                <img className="z-20 fixed inset-0 mx-auto max-w-screen max-h-screen" src="gyaaaaaaaaa" ref={popupimageref} />
+                <div className="z-20 fixed top-0 left-0 w-screen h-screen" onClick={popupimagecloser} />
+                <img className="z-30 fixed inset-0 mx-auto max-w-screen max-h-screen" src="gyaaaaaaaaa" ref={popupimageref} />
             </div>
         </div>
     )
