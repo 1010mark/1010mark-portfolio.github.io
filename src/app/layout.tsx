@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>
+      <body className="w-screen overflow-x-hidden">
         <Header />
         <div className="md:w-10/12 p-4 pt-0 mx-auto">
           {children}
