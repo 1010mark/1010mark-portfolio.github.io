@@ -11,7 +11,7 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         <Header />
-        <div className="md:w-10/12 p-4 mx-auto">
+        <div className="md:w-10/12 p-4 pt-0 mx-auto">
           {children}
         </div>
         <Footer />
