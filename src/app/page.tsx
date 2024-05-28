@@ -1,8 +1,20 @@
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: '1010mark Portfolio',
-  description: '1010markのポートフォリオです。声のデカさに自信があります。',
+  title: 'Top | 1010mark Portfolio',
+  description: '1010markのポートフォリオです。',
+  openGraph: {
+    title: "Top",
+    description: "1010markのポートフォリオです。声のデカさに自信があります。",
+    locale: "ja_JP",
+    siteName: "1010mark Portfolio",
+    images:[{
+      url: "https://1010mark.github.io/1010mark-portfolio.github.io/image/ogp.png",
+      width: 1200,
+      height: 630
+    }],
+    type: "website"
+  }
 }
 
 export default function Home() {
