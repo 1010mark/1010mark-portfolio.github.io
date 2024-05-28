@@ -14,7 +14,9 @@ export let tags_table = {
     "011": "3DCG",
     "012": "デザイン",
     "013": "技術発信",
-    "014": "参加/登壇"
+    "014": "参加/登壇",
+    "100": "Python",
+    "101": "MySQL"
 }
 
 export let works: Array<Work> = [
@@ -29,7 +31,7 @@ export let works: Array<Work> = [
         "directry_name": "shader_shadow",
         "name": "影シェーダー",
         "description": "Shaderlab(GLSL)で作成。\n友人が「影だけのアバター」を作ろうとしたことから端を発した作品。\nというのも、VRChat上ではアバターにライトを仕込むことが可能だが、それによる影は写真に映らない。\nよってライトによる実装が不可能であった。\nそこでカメラを仕込み、RenderTextureを取得して自作のシェーダーにより床に表示することで擬似的に影を再現した。\nカメラの角度・視野角を調整することで面光源・点光源のいずれの影も再現可能である。",
-        "tags": ["001", "011"],
+        "tags": ["000", "011"],
         "images": ["shadow0.jpg", "shadow1.png", "shadow2.png"],
         "year": 2024
     },{
@@ -40,11 +42,25 @@ export let works: Array<Work> = [
         "images": ["KCSTips.jpg","KCSTips-01.png","KCSTips-03.png","KCSTips-13.png"],
         "year": 2024
     },{
+        "directry_name": "noisemeter",
+        "name": "Python製簡易騒音計",
+        "description": "大学生活で集合住宅に住むことになり、騒音対策のために急いで制作。\nPythonで常時マイク入力を受けつけ、閾値を超えた瞬間ビープ音を流すようにした。",
+        "tags": ["000", "100"],
+        "images": ["noisemeter.png"],
+        "year": 2024
+    },{
         "directry_name": "vrdairy",
         "name": "VR酪農（未踏ジュニア）",
         "description": "未踏ジュニアに提案するプロジェクトとして立ち上げた。\n北海道在住の友人とともに、酪農を体感できるコミュニティの形成を図った。\n一次審査は通過したものの、最終審査で惜しくも不採用となってしまった。\nロゴが私が制作したものであり、キャッチーさを念頭に置いて制作した。",
         "tags": ["001", "011", "012"],
         "images": ["VRdairylogo.png", "VRdairy-01.png","VRdairy-02.png","VRdairy-03.png","VRdairy-04.png","VRdairy-05.png","VRdairy-06.png","VRdairy-07.png","VRdairy-08.png","VRdairy-09.png","VRdairy-11.png","VRdairy-12.png","VRdairy-13.png","VRdairy-14.png","VRdairy-15.png","VRdairy-16.png","VRdairy-17.png","VRdairy-18.png","VRdairy-19.png","VRdairy-20.png"],
+        "year": 2023
+    },{
+        "directry_name": "anonym_discord",
+        "name": "匿名Discordbot",
+        "description": "Node.js(Discord.js)+MySQLで作成。\nDiscordのコマンドで匿名の発言を可能にすることで、コミュニティの議論を活性化させた。\n本来は友人一人でpythonで作成していたが、引っ越しに伴い自宅サーバーの管理が不可能とのことで、二人で開発することになった。\n友人がpythonで大部分を完成させていたので、それをnode.jsに移行するとともにデータベースのチューニングを行った。\nrender.com+neonで完全無料で運用している。\nUptimerobotで死活監視を行っている。",
+        "tags": ["001", "101"],
+        "images": ["anonym_discord.png", "anonym_discord2.png"],
         "year": 2023
     },{
         "directry_name": "PV",
