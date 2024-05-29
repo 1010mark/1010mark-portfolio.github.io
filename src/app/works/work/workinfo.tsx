@@ -44,6 +44,9 @@ export default function Workinfo({ baseurl }: { baseurl: string }) {
                     })}
                     <h1 className="text-2xl md:text-3xl font-semibold">{work.name}</h1>
                 </div>
+                {work.links.map((link, index) => {
+                    return (<a href={link} key={index} className="md:ml-0 ml-2 text-blue-800 hover:text-blue-400 underline">{link}</a>)
+                })}
             </div>
             <div className="m-2 clear-both">
                 <WorkDescription descript={work.description} />
@@ -55,10 +58,12 @@ export default function Workinfo({ baseurl }: { baseurl: string }) {
                     )
                 })}
             </div>
+
             <div className="hidden fixed top-0 left-0 bg-black bg-opacity-70 w-screen h-screen" ref={imagehiddener} >
                 <div className="z-20 fixed top-0 left-0 w-screen h-screen" onClick={popupimagecloser} />
                 <img className="z-30 fixed inset-0 mx-auto max-w-screen max-h-screen" src="gyaaaaaaaaa" ref={popupimageref} />
             </div>
+
         </div>
     )
 }
