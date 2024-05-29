@@ -28,15 +28,7 @@ export let works: Array<Work> = [
         "tags": ["000", "010", "012"],
         "images": ["screen1.png"],
         "year": 2024,
-        "links": []
-    },{
-        "directry_name": "shader_shadow",
-        "name": "影シェーダー",
-        "description": "Shaderlab(GLSL)で作成。\n友人が「影だけのアバター」を作ろうとしたことから端を発した作品。\nというのも、VRChat上ではアバターにライトを仕込むことが可能だが、それによる影は写真に映らない。\nよってライトによる実装が不可能であった。\nそこでカメラを仕込み、RenderTextureを取得して自作のシェーダーにより床に表示することで擬似的に影を再現した。\nカメラの角度・視野角を調整することで面光源・点光源のいずれの影も再現可能である。",
-        "tags": ["000", "011"],
-        "images": ["shadow0.jpg", "shadow1.png", "shadow2.png"],
-        "year": 2024,
-        "links": []
+        "links": ["https://github.com/1010mark/1010mark-portfolio.github.io"]
     },{
         "directry_name": "KCSTips",
         "name": "KCSTips執筆",
@@ -53,6 +45,22 @@ export let works: Array<Work> = [
         "images": ["noisemeter.png"],
         "year": 2024,
         "links": ["https://github.com/1010mark/volume-meter"]
+    },{
+        "directry_name": "shader_shadow",
+        "name": "影シェーダー",
+        "description": "Shaderlab(GLSL)で作成。\n友人が「影だけのアバター」を作ろうとしたことから端を発した作品。\nというのも、VRChat上ではアバターにライトを仕込むことが可能だが、それによる影は写真に映らない。\nよってライトによる実装が不可能であった。\nそこでカメラを仕込み、RenderTextureを取得して自作のシェーダーにより床に表示することで擬似的に影を再現した。\nカメラの角度・視野角を調整することで面光源・点光源のいずれの影も再現可能である。",
+        "tags": ["000", "011"],
+        "images": ["shadow0.jpg", "shadow1.png", "shadow2.png"],
+        "year": 2024,
+        "links": []
+    },{
+        "directry_name": "speachbubble",
+        "name": "吹き出しシェーダー",
+        "description": "Shaderlab(GLSL)で作成。\nどこから見てもカメラ目線で追従する。\nまた、オブジェクト座標系における原点からの相対位置を指定できるようにすることで、\n「あるオブジェクトから相対的に同じ位置にある」を擬似的に再現した。\nこれにより、「どの方向から見ても頭の上(横)に吹き出しがある」という演出が可能。",
+        "tags": ["000", "011"],
+        "images": ["speachbubble.png", "speachbubble.gif"],
+        "year": 2024,
+        "links": ["https://github.com/1010mark/SpeachBubble"]
     },{
         "directry_name": "vrdairy",
         "name": "VR酪農（未踏ジュニア）",
