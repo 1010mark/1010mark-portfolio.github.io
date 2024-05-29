@@ -142,6 +142,14 @@ export let works: Array<Work> = [
         "year": 2021,
         "links": []
     },{
+        "directry_name": "JPenigma",
+        "name": "日本語版エニグマ",
+        "description": "第二次世界大戦でナチス・ドイツが用いた暗号機であるエニグマの日本語版をNode.jsで作成した。\n動作は次の通りである。まず、コマンドライン入力で平文を受け付ける。\nその後、動的に生成したプラグボードを用いて、擬似的に変換した。",
+        "tags": ["000"],
+        "images": ["JPenigma.png"],
+        "year": 2021,
+        "links": ["https://github.com/1010mark/JPenigma"]
+    },{
         "directry_name": "W-emo",
         "name": "W-emo",
         "description": "Aboutページに書いた、中学２年生のときに作成したSNS。\nNode.js+Express+EJS+Gulp.jsにて作成。\n期間限定公開であり、現在は稼働を停止している。\n「感情共有SNS」と銘打って、投稿時に感情をプルダウンメニューから選択して投稿するようにした。\nアカウント機能にも対応しており、実際にアカウントを作成してログインできるようになっていた。",
