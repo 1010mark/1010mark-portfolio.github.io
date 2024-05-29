@@ -4,6 +4,7 @@ import { works } from "../works";
 import { tags_table } from "../works";
 import { useSearchParams, notFound } from "next/navigation";
 import React, { useRef } from "react";
+import Image from 'next/image'
 
 function WorkDescription(props: { descript: string }) {
     const desc = props.descript.split(/(\n)/).map((item, index) => {
@@ -33,7 +34,7 @@ export default function Workinfo({ baseurl }: { baseurl: string }) {
         <div>
             <div>
                 {work.images.length ?
-                    <img className="max-h-[60vh] md:max-w-[80%] md:float-left md:mx-2 mb-2 mx-auto" src={`${baseurl}/image/works/${work.directry_name}/${work.images[0]}`} />
+                    <Image alt="" fill className="!max-h-[60vh] !relative md:!max-w-[60%] object-contain md:float-left md:mx-2 mb-2 mx-auto mt-2" src={`${baseurl}/image/works/${work.directry_name}/${work.images[0]}`} />
                     : ""}
                 <div className="m-2">
                     {work.tags.map((tag, index) => {
@@ -54,7 +55,10 @@ export default function Workinfo({ baseurl }: { baseurl: string }) {
             <div className="flex my-2 mx-auto max-w-full h-full gap-8 overflow-x-scroll snap-x">
                 {work.images.map((workimage, index) => {
                     return (
-                        <img key={index} onClick={() => popupimageopener(`${baseurl}/image/works/${work.directry_name}/${workimage}`)} className="h-32 max-w-96 snap-center" src={`${baseurl}/image/works/${work.directry_name}/${workimage}`} />
+                        <div className="h-32 snap-center relative block" key={index}>
+                            <Image alt="" onClick={() => popupimageopener(`${baseurl}/image/works/${work.directry_name}/${workimage}`)} 
+                            fill className="!h-32 !w-auto !relative max-w-[initial] object-contain" src={`${baseurl}/image/works/${work.directry_name}/${workimage}`} />
+                        </div>
                     )
                 })}
             </div>
