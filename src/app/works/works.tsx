@@ -22,6 +22,30 @@ export let tags_table = {
 
 export let works: Array<Work> = [
     {
+        "directry_name": "worddistance",
+        "name": "単語間距離ゲーム",
+        "description": "私が所属している慶應義塾大学公認サークルKCS::Computer SocietyにてWeb班の新人講習を兼ねて集団開発。\n要件定義を行い、新人部員でも書きやすくサポートした。\nWord2VecとFlaskを用いて制作。矢上祭にて大人気の展示となった。",
+        "tags": ["001", "010", "012", "100"],
+        "images": [ "worddistance-02.png", "worddistance-03.png", "worddistance-01.png"],
+        "year": 2024,
+        "links": ["https://github.com/1010mark/WordDistanceGame"]
+    },{
+        "directry_name": "security_camp",
+        "name": "セキュリティ・キャンプ全国大会",
+        "description": "セキュリティ・キャンプは、情報セキュリティやIT技術に興味を持つ学生向けのIPA主催プログラム。例年の倍率は約6倍。\n「S16：LLMハッキング：プロンプトインジェクションの完全攻略」に参加し、LLMを用いたWebサービスのセキュリティについて学んだ。",
+        "tags": ["000", "010", "014"],
+        "images": [ "security_camp-01.jpg"],
+        "year": 2024,
+        "links": ["https://www.ipa.go.jp/jinzai/security-camp/2024/camp/zenkoku/index.html"]
+    },{
+        "directry_name": "team_lab",
+        "name": "チームラボ インターン",
+        "description": "teamLabは、アート、サイエンス、テクノロジーを融合させたデジタルアートの制作・展示を行う企業。\nインタラクティブエンジニア（第1ターム）の一員として、サマーインターンシップに参加し、デジタルアートの制作に携わった。",
+        "tags": ["000", "011", "012"],
+        "images": [ "team_lab.jpg"],
+        "year": 2024,
+        "links": ["https://www.team-lab.com/"]
+    },{
         "directry_name": "portf",
         "name": "ポートフォリオ",
         "description": "今見ていただいています。\nNext.js+TailwindCSS+GitHubPagesで作成。",
