@@ -46,7 +46,7 @@ export default function Workinfo({ baseurl }: { baseurl: string }) {
                     <h1 className="text-2xl md:text-3xl font-semibold">{work.name}</h1>
                 </div>
                 {work.links.map((link, index) => {
-                    return (<a href={link} key={index} className="md:ml-0 ml-2 text-blue-800 hover:text-blue-400 underline">{link}</a>)
+                    return (<a href={link} key={index} className="md:ml-0 ml-2 text-blue-800 hover:text-blue-400 underline">{link}<br/></a>)
                 })}
             </div>
             <div className="m-2 clear-both">

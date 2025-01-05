@@ -22,6 +22,14 @@ export let tags_table = {
 
 export let works: Array<Work> = [
     {
+        "directry_name": "boundless_poet",
+        "name": "生成詩人A",
+        "description": "「生成詩人A - boundless voices」は、時間と詩が織りなす無限の物語を体験できるインタラクティブな詩の空間です。64秒ごとに新たな歌詞が自動生成されることで、言葉の流れが絶え間なく変化し、訪れるたびに異なる詩的体験を提供します。\n生成される歌詞は偶然と必然が交錯した一瞬の芸術であり、鑑賞者自身の心情や想像力と響き合いながら、独自の解釈を引き出します。\n終わりのないリズム、絶え間なく紡がれる言葉。時間の中に刻まれる無限の声を通して、詩の可能性とその多様性を感じてください。",
+        "tags": ["000", "010", "012", "100"],
+        "images": ["logo_yoko.jpg", "page1.png", "page2.png", "page3.png"],
+        "year": 2025,
+        "links": ["https://boundless-voice-poet.com/", "https://github.com/1010mark/endless_Poet"]
+    },{
         "directry_name": "worddistance",
         "name": "単語間距離ゲーム",
         "description": "私が所属している慶應義塾大学公認サークルKCS::Computer SocietyにてWeb班の新人講習を兼ねて集団開発。\n要件定義を行い、新人部員でも書きやすくサポートした。\nWord2VecとFlaskを用いて制作。矢上祭にて大人気の展示となった。",
