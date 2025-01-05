@@ -17,7 +17,8 @@ export let tags_table = {
     "013": "技術発信",
     "014": "参加/登壇",
     "100": "Python",
-    "101": "MySQL"
+    "101": "MySQL",
+    "102": "AI"
 }
 
 export let works: Array<Work> = [
@@ -25,10 +26,18 @@ export let works: Array<Work> = [
         "directry_name": "boundless_poet",
         "name": "生成詩人A",
         "description": "「生成詩人A - boundless voices」は、時間と詩が織りなす無限の物語を体験できるインタラクティブな詩の空間です。64秒ごとに新たな歌詞が自動生成されることで、言葉の流れが絶え間なく変化し、訪れるたびに異なる詩的体験を提供します。\n生成される歌詞は偶然と必然が交錯した一瞬の芸術であり、鑑賞者自身の心情や想像力と響き合いながら、独自の解釈を引き出します。\n終わりのないリズム、絶え間なく紡がれる言葉。時間の中に刻まれる無限の声を通して、詩の可能性とその多様性を感じてください。",
-        "tags": ["000", "010", "012", "100"],
+        "tags": ["000", "010", "012", "100", "102"],
         "images": ["logo_yoko.jpg", "page1.png", "page2.png", "page3.png"],
         "year": 2025,
         "links": ["https://boundless-voice-poet.com/", "https://github.com/1010mark/endless_Poet"]
+    },{
+        "directry_name": "hypnagogia",
+        "name": "Hypnagogia | ヒプナゴギア",
+        "description": "「究極の没入感」をもたらすイマーシブMV\n――物語は1件のメッセージから始まる\n\nChatGPT-4oとNext.jsを用いた体験型謎解きサイト。\n現実とクロスオーバーした問題で、空想と現実の境界を融解させた。\n音楽から映像、作問まで一人で担当した。",
+        "tags": ["000", "010", "012", "102"],
+        "images": ["page1.png", "page2.png", "page3.png", "page4.png", "page5.png"],
+        "year": 2024,
+        "links": ["https://saveher.vercel.app/play"]
     },{
         "directry_name": "worddistance",
         "name": "単語間距離ゲーム",
@@ -41,7 +50,7 @@ export let works: Array<Work> = [
         "directry_name": "security_camp",
         "name": "セキュリティ・キャンプ全国大会",
         "description": "セキュリティ・キャンプは、情報セキュリティやIT技術に興味を持つ学生向けのIPA主催プログラム。例年の倍率は約6倍。\n「S16：LLMハッキング：プロンプトインジェクションの完全攻略」に参加し、LLMを用いたWebサービスのセキュリティについて学んだ。",
-        "tags": ["000", "010", "014"],
+        "tags": ["000", "010", "014", "102"],
         "images": [ "security_camp-01.jpg"],
         "year": 2024,
         "links": ["https://www.ipa.go.jp/jinzai/security-camp/2024/camp/zenkoku/index.html"]
