@@ -18,11 +18,12 @@ export let tags_table = {
   "014": "参加/登壇",
   "100": "Python",
   "101": "MySQL",
-  "102": "AI",
+  "102": "LLM/AI",
   "103": "AWS",
   "104": "JavaScript",
   "105": "Next.js",
   "106": "PostgreSQL",
+  "107": "Docker",
 };
 
 export let works: Array<Work> = [
@@ -51,7 +52,7 @@ export let works: Array<Work> = [
     name: "生成詩人A",
     description:
       "期間限定公開作品「生成詩人A - boundless voices」は、時間と詩が織りなす無限の物語を体験できるインタラクティブな詩の空間です。64秒ごとに新たな歌詞が自動生成されることで、言葉の流れが絶え間なく変化し、訪れるたびに異なる詩的体験を提供します。\n生成される歌詞は偶然と必然が交錯した一瞬の芸術であり、鑑賞者自身の心情や想像力と響き合いながら、独自の解釈を引き出します。\n終わりのないリズム、絶え間なく紡がれる言葉。時間の中に刻まれる無限の声を通して、詩の可能性とその多様性を感じてください。\n使用技術:Next.js, Flask, ChatGPT-4o, AWS(EC2/Route53), Docker, Nginx, Ableton Live",
-    tags: ["000", "010", "012", "100", "102", "103", "104", "105"],
+    tags: ["000", "010", "012", "100", "102", "103", "104", "105", "107"],
     images: ["logo_yoko.jpg", "page1.png", "page2.png", "page3.png"],
     year: 2025,
     links: ["https://github.com/1010mark/endless_Poet"],
