@@ -33,7 +33,7 @@ export let works: Array<Work> = [
     description:
       "Progateハッカソン（Powered by AWS）にてAWS賞を受賞した作品。\n食材の在庫と消費期限を管理し、AIがレシピ提案するサービス。\n私はバックエンド及びインフラ構築を担当した。\nバックエンドはnext.jsを用いて作成し、AWSのEC2にデプロイした。ユーザー認証にはkeycloakとAuth.jsを用いた\nしかし、ハッカソン期間中にAuth.jsの脆弱性（CVE-2025-29927）が発覚。適切に対処した。\nまた、インフラ構築ではRDS上でPostgreSQLを用いてデータベースをEC2と連携しつつ、Bedrock経由でClaude3.5を用いてAIのレシピ提案を実現した。\nハッカソンの都合上インフラ構築には1日半しか与えられなかったが、当初の計画通りに構築することができた。\n受賞理由にはAWSのセキュアなインフラ構築と、セキュリティに関する配慮が高いことが挙げられた。\nセキュリティ・キャンプ全国大会を通して、セキュリティに関する知識を深めた経験が活きたように感じた。",
     tags: ["001", "010", "014", "102", "103", "104", "106"],
-    images: ["mockup.png", "structure.jpg"],
+    images: ["mockup.png", "structure.jpg", "IMG_0178.jpg"],
     year: 2025,
     links: ["https://topaz.dev/projects/fe7d3c5c2705dd89510b"],
   },
@@ -85,9 +85,9 @@ export let works: Array<Work> = [
     directry_name: "security_camp",
     name: "セキュリティ・キャンプ全国大会",
     description:
-      "セキュリティ・キャンプは、情報セキュリティやIT技術に興味を持つ学生向けのIPA主催プログラム。例年の倍率は約6倍。\n「S16：LLMハッキング：プロンプトインジェクションの完全攻略」に参加し、LLMを用いたWebサービスのセキュリティについて学んだ。",
-    tags: ["000", "010", "014", "102"],
-    images: ["security_camp-01.jpg"],
+      "セキュリティ・キャンプは、情報セキュリティやIT技術に興味を持つ学生向けのIPA主催プログラム。例年の倍率は約6倍。\n「S16：LLMハッキング：プロンプトインジェクションの完全攻略」に参加し、LLMを用いたWebサービスのセキュリティについて学んだ。\nなお、ここで提案したMatrix Prompt Injection ToolはCODE BLUE 2024内ツール発表イベントCyber TAMAGOにて発表。\nそうした活動が評価され、セキュリティ・キャンプ2024年度協賛企業総会にて修了生代表として登壇した。",
+    tags: ["001", "010", "014", "100", "102"],
+    images: ["poster.jpg", "security_camp-01.jpg"],
     year: 2024,
     links: [
       "https://www.ipa.go.jp/jinzai/security-camp/2024/camp/zenkoku/index.html",
