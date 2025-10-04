@@ -58,6 +58,15 @@ export let works: Array<Work> = [
     links: ["https://info.defcon.org/content/?id=60861", "https://www.appi.keio.ac.jp/?p=6924", "https://kemco-keio.note.jp/n/n918ed96dfd97?gs=491901b501d6"],
   },
   {
+    directry_name: "capcom",
+    name: "CAPCOM GAME COMPETITION出場",
+    description: "大学で所属しているサークルのメンバーで参加。総勢20名のチームで、Shaderを担当。RE ENGINEを用いた開発の中で、トゥーン調のルックを追求した。\n（画像は公式トップページより引用。）",
+    tags: ["001", "011", "014", "108"],
+    images: ["title.jpg"],
+    year: 2025,
+    links: ["https://www.capcom-games.com/cgc/2025/ja-jp"],
+  },
+  {
     directry_name: "lastbite",
     name: "ラストバイト",
     description:
