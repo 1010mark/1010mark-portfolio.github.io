@@ -16,6 +16,7 @@ export let tags_table = {
   "012": "デザイン",
   "013": "技術発信",
   "014": "参加/登壇",
+  "015": "インターンシップ",
   "100": "Python",
   "101": "MySQL",
   "102": "LLM/AI",
@@ -24,9 +25,38 @@ export let tags_table = {
   "105": "Next.js",
   "106": "PostgreSQL",
   "107": "Docker",
+  "108": "Shader",
+  "109": "Go"
 };
 
 export let works: Array<Work> = [
+  {
+    directry_name: "colpla_3days",
+    name: "コロプラ 3daysインターンシップ",
+    description: "株式会社コロプラの3daysインターンシップに参加した。内製ライブラリを用いてゲームのバックエンドをGoで作成した。最終的には2人組のチームでゲームサーバーのアーキテクチャ及び実装を提案。ステートフルなRPCの実装を勉強することができた。",
+    tags: ["001", "010", "015", "109"],
+    images: ["pic.jpg"],
+    year: 2025,
+    links: ["https://colopl.co.jp/recruit/internship2025/engineer_serverside/3days"],
+  },
+  {
+    directry_name: "Sansan_summer",
+    name: "Sansan 有給サマーインターンシップ",
+    description: "Sansanの有給サマーインターンシップにおいて、Eight事業部のSREエンジニアとして1ヶ月参加した。課題は「AWS Fargate SPOTの活用最大化」として、AWS Fargate SPOTの活用を最大化するためのシステムを構築することであった。しかしこのSPOTはAWS ECSのSPOTインスタンスと比較して、様々な点で扱いにくいものであった。その中で私が構築したシステムは、最終的に可用性を担保しながらもコストを大幅に削減することを示した。",
+    tags: ["001", "010", "015", "103"],
+    images: [],
+    year: 2025,
+    links: ["https://newgradsevents.corp-sansan.com/engineer/200001"],
+  },
+  {
+    directry_name: "DEFCON33",
+    name: "国際会議「DEFCON33」登壇",
+    description: "DEF CONという情報セキュリティカンファレンスに参加し、Demolabsにて登壇しました。\nDEF CONはラスベガスで毎年行われる世界最大級のハッカー／セキュリティ会議です。\nDEF CONでは幅広い分野の発表/交流が為されており、多種多様なブースが展開されています。その中でも私が登壇したDemolabsは制作したツールのデモンストレーションを中心としたブースとなります。\n発表概要は以下のとおりです。\nプロンプトインジェクションは、AIが読む文章やデータの中に本来の指示より強く働く別の指示を紛れ込ませ、意図しない動作を引き起こす攻撃です。これはLLMの重大なリスクの一つとして整理されており、外部サイトやファイル経由で起きる「間接型」も含めて注意が呼びかけられています。（https://genai.owasp.org/llmrisk/llm01-prompt-injection/）\n現実に、この脆弱性を利用した攻撃事例も確認されています。2025年8月に研究者がGoogleのGeminiを“カレンダー招待”に埋め込んだ隠し指示で乗っ取れることを示しました。ユーザーが「今日の予定は？」と尋ねるだけで、Geminiがイベントタイトルに仕込まれた命令を読み取り、スマートホーム機器の操作や各種データへのアクセスまで引き起こせるという内容です。報告後、Googleは修正を行ったとされています。このケースは、LLMが他サービスと広く連携するほど攻撃面が広がることを示す、わかりやすい最新の例と言えます。\n\nこの課題に対して、私達は以下の2つのツールを提案しました。\n・ShinoLLMApps - 脆弱なLLMアプリの詰め合わせで、MPITを使いながらプロンプトインジェクションの仕組みやリスクを安全に学べる学習用の環境です。\n・MPIT（Matrix Prompt Injection Tool） - 攻撃パターンを自動生成して試せるようにし、AIが処理しそうな入力欄の特定やテスト文の工夫、反復的な改良まで一連の流れを支援します。ペンテストの現場で手早く安全性を確かめることを目的としたツールです。\n\nなお、この登壇に際し、慶應義塾大学より奨学金を支援いただきました。学部2年生の学外研究という異例でしたが、柔軟に対応していただいたことに感謝申し上げます。",
+    tags: ["001", "010", "013", "014", "102"],
+    images: ["pic1.jpg", "pic2.jpg"],
+    year: 2025,
+    links: ["https://info.defcon.org/content/?id=60861", "https://www.appi.keio.ac.jp/?p=6924", "https://kemco-keio.note.jp/n/n918ed96dfd97?gs=491901b501d6"],
+  },
   {
     directry_name: "lastbite",
     name: "ラストバイト",
@@ -98,7 +128,7 @@ export let works: Array<Work> = [
     name: "チームラボ インターン",
     description:
       "teamLabは、アート、サイエンス、テクノロジーを融合させたデジタルアートの制作・展示を行う企業。\nインタラクティブエンジニア（第1ターム）の一員として、サマーインターンシップに参加し、デジタルアートの制作に携わった。",
-    tags: ["000", "011", "012"],
+    tags: ["000", "011", "012", "015", "108"],
     images: ["team_lab.jpg"],
     year: 2024,
     links: ["https://www.team-lab.com/"],
@@ -143,7 +173,7 @@ export let works: Array<Work> = [
     name: "影シェーダー",
     description:
       "Shaderlab(GLSL)で作成。\n友人が「影だけのアバター」を作ろうとしたことから端を発した作品。\nというのも、VRChat上ではアバターにライトを仕込むことが可能だが、それによる影は写真に映らない。\nよってライトによる実装が不可能であった。\nそこでカメラを仕込み、RenderTextureを取得して自作のシェーダーにより床に表示することで擬似的に影を再現した。\nカメラの角度・視野角を調整することで面光源・点光源のいずれの影も再現可能である。",
-    tags: ["000", "011"],
+    tags: ["000", "011", "108"],
     images: ["shadow0.jpg", "shadow1.png", "shadow2.png"],
     year: 2024,
     links: [],
@@ -153,7 +183,7 @@ export let works: Array<Work> = [
     name: "吹き出しシェーダー",
     description:
       "Shaderlab(GLSL)で作成。\nどこから見てもカメラ目線で追従する。\nまた、オブジェクト座標系における原点からの相対位置を指定できるようにすることで、\n「あるオブジェクトから相対的に同じ位置にある」を擬似的に再現した。\nこれにより、「どの方向から見ても頭の上(横)に吹き出しがある」という演出が可能。",
-    tags: ["000", "011"],
+    tags: ["000", "011", "108"],
     images: ["speachbubble.png", "speachbubble.gif"],
     year: 2024,
     links: ["https://github.com/1010mark/SpeachBubble"],
@@ -214,7 +244,7 @@ export let works: Array<Work> = [
     name: "距離変化+輪郭抽出",
     description:
       "Shaderlab(GLSL)で作成。シェーダーは無料配布した。\n距離に応じて不透明度が変化するシェーダー。\n十分遠い距離からはオーブのような輪郭だけが見えるようにしている。\nサンブル画像では球に適用しているが、実際にはキャラクターモデルにも使える。\nそのため「近づくと急に見える」といった幻想的な演出が可能。\n反響は大きく、実際の使用例を添えたX上でのポストはインプレッション数約20万を獲得した。",
-    tags: ["000", "011"],
+    tags: ["000", "011", "108"],
     images: ["distance.png", "distance2.png"],
     year: 2023,
     links: ["https://github.com/1010mark/DistanceShader"],
@@ -224,7 +254,7 @@ export let works: Array<Work> = [
     name: "Heavy White Black",
     description:
       "Shaderlab(GLSL)で作成。VRChat上のワールドとして公開。\nレイマーチングによる実装により容量の軽量化と形状の動的な変化を実現。\nワールド容量は約123KB。\nワールドに設置されたスライダーを調整することによりフラクタル立体の形状を変化させることができる。\n反響が比較的大きく、ワールドを投稿した際のX上での告知ポストはインプレッション数約21,000を得た。",
-    tags: ["000", "011", "012"],
+    tags: ["000", "011", "012", "108"],
     images: [
       "heavywhiteblack3.png",
       "heavywhiteblack1.png",
@@ -238,7 +268,7 @@ export let works: Array<Work> = [
     name: "透明度に関する習作",
     description:
       "Shaderlab(GLSL)で作成。\n透明度は本来0%～100%の範囲内で指定されるものである。\nしかし、内部処理的には理論上その範囲を逸脱しても問題はないはずである。\nよって透明度を-3000%～3000%まで拡張できるシェーダーを作成した。",
-    tags: ["000", "011"],
+    tags: ["000", "011", "108"],
     images: ["transparentexperiment1.png", "transparentexperiment2.png"],
     year: 2022,
     links: [],
@@ -248,7 +278,7 @@ export let works: Array<Work> = [
     name: "影絵",
     description:
       "Shaderlab(GLSL)で作成。VRChat上のワールドとして公開した。\n描画順序を意図的に変えることで、視界をすべて白黒にした。",
-    tags: ["000", "011", "012"],
+    tags: ["000", "011", "012", "108"],
     images: ["shadowplay.png"],
     year: 2022,
     links: [],
@@ -268,7 +298,7 @@ export let works: Array<Work> = [
     name: "裏面シェーダー",
     description:
       "Shaderlab(GLSL)で作成。完成したシェーダーは無料配布した。\n3DCGゲームなどでよくある「オブジェクトの裏にカメラがめり込んで興ざめした」という経験に着想を得た作品。\n裏面にシェーダーでレイマーチングを実装することで、幻想的な世界を演出。\n以下のサンプルgifでは円柱にこれを適用しているが、実際にはキャラクターモデルに適用することも可能である。\n反響は大きく、これの使用例の動画をX上で投稿した際に、インプレッション数約240,000、RP数1253、いいね数3433を獲得した。（2024/05/27現在）",
-    tags: ["000", "011", "012"],
+    tags: ["000", "011", "012", "108"],
     images: ["ikai.png", "ikai.gif"],
     year: 2022,
     links: ["https://github.com/1010mark/SIB"],
@@ -282,16 +312,6 @@ export let works: Array<Work> = [
     images: ["xRAM.png"],
     year: 2021,
     links: [],
-  },
-  {
-    directry_name: "JPenigma",
-    name: "日本語版エニグマ",
-    description:
-      "第二次世界大戦でナチス・ドイツが用いた暗号機であるエニグマの日本語版をNode.jsで作成した。\n動作は次の通りである。まず、コマンドライン入力で平文を受け付ける。\nその後、動的に生成したプラグボードを用いて、擬似的に変換した。",
-    tags: ["000"],
-    images: ["JPenigma.png"],
-    year: 2021,
-    links: ["https://github.com/1010mark/JPenigma"],
   },
   {
     directry_name: "W-emo",
