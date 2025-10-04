@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <main>
       <img
-        src={`${process.env.BASE_PATH}/image/icon.png`}
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/image/icon.png`}
         alt="3と書いてあるアイコン"
         className="drop-shadow-md max-w-1/4 max-h-1/4 mx-auto my-2"
       />

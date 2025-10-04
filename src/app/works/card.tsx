@@ -2,13 +2,14 @@ import type { Work } from './works';
 import { tags_table } from "./works";;
 import Image from 'next/image'
 
-export default async function Card(props: Work) {
+export default function Card(props: Work) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "https://1010mark.github.io/1010mark-portfolio.github.io"
   return (
-    <a href={`${process.env.BASE_PATH}/works/work?pid=${props.directry_name}`} className="hover:opacity-60">
+    <a href={`${basePath}/works/work?pid=${props.directry_name}`} className="hover:opacity-60">
     <article className='max-w-sm rounded overflow-hidden shadow-lg'>
       {props.images[0] ? 
         <div className="w-full h-[50vh] relative block">
-          <Image className="mx-auto object-contain" fill src={`${process.env.BASE_PATH}/image/works/${props.directry_name}/${props.images[0]}`} alt={props.images[0]} /> 
+          <Image className="mx-auto object-contain" fill src={`${basePath}/image/works/${props.directry_name}/${props.images[0]}`} alt={props.images[0]} /> 
         </div> :
         <div className="table [aspect-ratio:16/9] w-full h-auto text-center border"><p className="text-gray-300 table-cell align-middle">No Image</p></div>}
       <div className="px-6 py-4">
